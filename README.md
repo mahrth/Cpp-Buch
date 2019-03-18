@@ -1,2 +1,3 @@
-# Cpp-Buch
-Code-Beispiele zum Buch: Thomas Mahr, "Objektorientierte Programmierung in C++ für C-Programmierer", ISBN: 978109059594
+# Objektorientierte Programmierung in C++ für C-Programmierer
+
+Dieses Projekt enthält die Code-Beispiele zum Buch "Objektorientierte Programmierung in C++ für C-Programmierer" von Thomas Mahr, ISBN: 978109059594
