@@ -1,22 +1,22 @@
 #include <iostream> 
 using namespace std;
 
-void f1(int i) {/*§wert1§*/  
+void f1(int i) {  
 	cout << "f1(int):  i=" << i << ", Adresse des Wertes: " << &i << endl;
 }
 
-void f2(int* z) {/*§zeiger1§*/ 
+void f2(int* z) { 
 	cout << "f2(int*): *z=" << *z << ", Wert des Zeigers: " << z << endl;
 }
 
-void f3(int& r) {/*§referenz1§*/ 
+void f3(int& r) { 
 	cout << "f3(int&): r" << r << ", Adresse der Referenz: " << &r << endl;
 }
 
 int main() {
 	int i = 12;
 	cout << "Wert von i: " << i << ", Adresse von i: " << &i << endl;
-	f1(i);/*§wert2§*/ 
-	f2(&i);/*§zeiger2§*/ 
-	f3(i);/*§referenz2§*/ 
+	f1(i); 
+	f2(&i); 
+	f3(i); 
 }
