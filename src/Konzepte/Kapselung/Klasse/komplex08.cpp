@@ -3,7 +3,7 @@
 using namespace std;
 
 struct Komplex {
-	double re=0, im=0;/*§re_im§*/	
+	double re=0, im=0;	
 	double betragswert=0;	
 	bool betragGueltig=true;
 	void ausgeben();	

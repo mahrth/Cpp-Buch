@@ -39,7 +39,7 @@ public:
 void signalSpeichern(const Signal& signal, const string& dateiname) {
 	ofstream os(dateiname);
 	for(unsigned int n=0; n<signal.laenge(); n++) {
-		Abtastwert wert = signal.wert(n);/*§signal_wert§*/
+		Abtastwert wert = signal.wert(n);
 		os << wert.t << " " << wert.amp.real() << " " << wert.amp.imag() << endl;
 	}
 	os.close();	
@@ -48,15 +48,14 @@ void signalSpeichern(const Signal& signal, const string& dateiname) {
 void schreibeGnuplotParameter(const string& dateinameParameter, const string& dateinameWerte, const string& dateinamePdf) {
 	ofstream os(dateinameParameter);
 	os << "set grid\n"
-			<< "set title 'Signal'\n"/*§gnuplot_titel§*/
-			<< "set xlabel 'Zeit'\n"/*§gnuplot_xlabel§*/
-			<< "set ylabel 'Amplitude'\n"/*§gnuplot_ylabel§*/
-			<< "set terminal pdf\n"/*§gnuplot_terminal§*/
-			<< "set output '" << dateinamePdf << "'\n"/*§gnuplot_output§*/
-			<< "plot '" << dateinameWerte << "' using 1:2 title 'real' lc rgb 'black' with linespoints"/*§gnuplot_plotreal§*/
-			<< ",\\\n'" << dateinameWerte << "' using 1:3 title 'imag' lc rgb 'black' dashtype '-' with linespoints"/*§gnuplot_plotimag§*/
-			<< endl
-			;
+			<< "set title 'Signal'\n"
+			<< "set xlabel 'Zeit'\n"
+			<< "set ylabel 'Amplitude'\n"
+			<< "set terminal pdf\n"
+			<< "set output '" << dateinamePdf << "'\n"
+			<< "plot '" << dateinameWerte << "' using 1:2 title 'real' lc rgb 'black' with linespoints"
+			<< ",\\\n'" << dateinameWerte << "' using 1:3 title 'imag' lc rgb 'black' dashtype '-' with linespoints"
+			<< endl;
 	os.close();
 }
 

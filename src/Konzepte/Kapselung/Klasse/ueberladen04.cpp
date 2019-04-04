@@ -1,14 +1,13 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 struct A {
-	string f() { return "A::f()"; }
-	string f(int arg) { return "A::f(int)"; }
+	const char* f() { return "A::f()"; }
+	const char* f(int arg) { return "A::f(int)"; }
 };
 	
-string f() { return "f()"; }
-string f(int arg) { return "f(int)"; }
+const char* f() { return "f()"; }
+const char* f(int arg) { return "f(int)"; }
 
 int main() {
 	int i=0;

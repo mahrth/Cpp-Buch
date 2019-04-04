@@ -33,7 +33,7 @@ public:
 		return werte.size(); 
 	}
 	Abtastwert wert(const int pos) const {
-		return werte[pos];/*§abtastamp_index§*/
+		return werte[pos];
 	}
 	void generieren(const unsigned int N, const double f) {
 		werte.clear();
@@ -45,19 +45,19 @@ public:
 			werte.push_back(a);
 		}
 	}
-	string text() {/*§Signal_text§*/
+	string text() {
 		stringstream s;
 		for(auto a : werte) {
-			s << a.text() << endl;/*§signal_text2§*/
+			s << a.text() << endl;
 		}
 		return s.str();
 	}	
 };
 
 int main() {
-	Signal signal;/*§main_signal§*/
-	signal.generieren(3,2.0);/*§main_abtasten§*/
-	cout << signal.text();/*§main_text§*/
+	Signal signal;
+	signal.generieren(3,2.0);
+	cout << signal.text();
 }
 
 string Komplex::text() {

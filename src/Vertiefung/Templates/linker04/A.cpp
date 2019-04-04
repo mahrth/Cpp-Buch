@@ -1,2 +1,2 @@
 #include "A.h"
-int f(const int& x) { return x*x; }/*§func1def§*/
+int f(const int& x) { return x*x; }

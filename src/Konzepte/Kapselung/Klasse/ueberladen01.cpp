@@ -1,17 +1,16 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-string f() { 
+const char* f() { 
 	return "f()"; 
 }
-string f(int arg) { 
+const char* f(int arg) { 
 	return "f(int)"; 
 }
-string f(double arg) { 
+const char* f(double arg) { 
 	return "f(double)"; 
 }
-string f(int arg1, int arg2) { 
+const char* f(int arg1, int arg2) { 
 	return "f(int,int)"; 
 }
 

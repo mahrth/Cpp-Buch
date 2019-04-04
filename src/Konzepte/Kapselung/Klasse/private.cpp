@@ -15,8 +15,8 @@ public:
 struct B {
 	void h() {
 		A a3;  
-		// a.i = 0;
-		// a.f();			
+		// a3.i = 0;
+		// a3.f();			
 	}
 };
 

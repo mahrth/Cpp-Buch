@@ -1,13 +1,13 @@
 struct A {
 	const static int n = 12; 
 	const int m = 7; 
-	static int f1() { return n; }/*§f1Func§*/ 
-	static int f2();/*§f2Func§*/ 
-	int g1() { return n; }/*§g1Func§*/ 
-	int g2() { return f1(); }/*§g2Func§*/ 
+	static int f1() { return n; } 
+	static int f2(); 
+	int g1() { return n; } 
+	int g2() { return f1(); } 
 };
 
-int A::f2() {/*§f3FuncDef§*/ 
+int A::f2() { 
 	int i = n;
 	//i += m;
 	//i += g1();

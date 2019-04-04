@@ -11,11 +11,11 @@ int main() {
 	cout << "\nquadrat(\"2.5\"): " << quadrat("2.5");
 }
 
-template <typename T> T quadrat(const T& x) {/*§quadrat1def§*/
+template <typename T> T quadrat(const T& x) {
 	return x * x;
 }
 
-string quadrat(const string& x) {/*§quadrat2def§*/
+string quadrat(const string& x) {
 	double d = stod(x);
 	return to_string(d*d);
 }

@@ -22,8 +22,8 @@ ostream& operator<<(ostream& s, const A<T>& a) {
 int main() {
 	A<double> a1{1.1};
 	cout << "a1 = " << a1;
-	A<double> a2{a1};/*§cctor1Aufruf§*/
+	A<double> a2{a1};
 	cout << "\na2 = " << a2;
-	A<int> a3{a1};/*§cctor2Aufruf§*/
+	A<int> a3{a1};
 	cout << "\na3 = " << a3;
 }

@@ -2,7 +2,7 @@
 using namespace std;
 
 struct A {
-	~A() { cout << "Destruktor\n"; }/*§dtor1A§*/
+	~A() { cout << "Destruktor\n"; }
 };
 
 int main() {

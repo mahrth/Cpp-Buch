@@ -16,7 +16,7 @@ public:
 	template <typename, const unsigned int> friend class Stapel;
 };
 
-template<typename T, const unsigned int N>/*§cctor1def§*/
+template<typename T, const unsigned int N>
 Stapel<T,N>::Stapel(const Stapel& s) : anzahl(s.anzahl) {
 	std::cout << "\nStapel<T,N>::Stapel(const Stapel&)";
 	for(unsigned int i=0; i<anzahl; i++) {
@@ -24,7 +24,7 @@ Stapel<T,N>::Stapel(const Stapel& s) : anzahl(s.anzahl) {
 	}
 }
 
-template<typename T, const unsigned int N>/*§cctor2def§*/
+template<typename T, const unsigned int N>
 template<typename S, const unsigned int M> Stapel<T,N>::Stapel(const Stapel<S,M>& s) {
 	std::cout << "\nStapel<T,N>::Stapel(const Stapel<S,M>& s)";
 	anzahl = 0;

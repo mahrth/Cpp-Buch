@@ -21,7 +21,7 @@ struct Abtastwert {
 	Komplex amp; 	
 	string text() {
 		stringstream s;
-		s << t << ": " << amp./*§wert_text§*/text();
+		s << t << ": " << amp.text();
 		return s.str();
 	}
 };

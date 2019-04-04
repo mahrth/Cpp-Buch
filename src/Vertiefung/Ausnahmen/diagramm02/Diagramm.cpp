@@ -41,8 +41,8 @@ void Diagramm::schreibeGnuplotParameter(const string& nameParameter, const strin
 			<< "set ylabel 'Amplitude'\n"
 			<< "set terminal pdf\n"
 			<< "set output '" << namePdf << "'\n"
-			<< "plot '" << nameWerte << "' using 1:2 title 'real' lc rgb 'black' with linespoints"/*§gnuplot_plotreal§*/
-			<< ",\\\n'" << nameWerte << "' using 1:3 title 'imag' lc rgb 'black' dashtype '-' with linespoints"/*§gnuplot_plotimag§*/
+			<< "plot '" << nameWerte << "' using 1:2 title 'real' lc rgb 'black' with linespoints"
+			<< ",\\\n'" << nameWerte << "' using 1:3 title 'imag' lc rgb 'black' dashtype '-' with linespoints"
 			<< endl
 			;
 	os.close();

@@ -1,21 +1,21 @@
 struct A {
-	int m,n;/*§A_mn§*/
-	void e() {/*§A_e§*/
+	int m,n;
+	void e() {
 		m++;
 		n++;
 	}
-	void f() const {/*§A_f§*/
+	void f() const {
 		// e();
 	}
-	int g() const {/*§A_g§*/
+	int g() const {
 		int k = m;
 		k *= n;
 		return k;
 	}
-	void h() const {/*§A_h§*/
-		A a2 = {5, 6};/*§h_a§*/
-		a2.e();/*§h_e§*/
-		a2.m *= a2.n;/*§h_mul§*/
+	void h() const {
+		A a2 = {5, 6};
+		a2.e();
+		a2.m *= a2.n;
 	}
 };
 

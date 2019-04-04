@@ -24,12 +24,12 @@ void e2() {
 	delete a;
 }
 
-void f1() {/*§f1Func§*/
+void f1() {
 	A a{"Stapelspeicher f1"};
 	e1();
 }
 
-void f2() {/*§f2Func§*/
+void f2() {
 	A* a = new A{"Freispeicher f2"};
 	e2();
 	delete a;
