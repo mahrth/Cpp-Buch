@@ -1,34 +1,34 @@
 #include <iostream>
 using namespace std;
 
-struct A/*§intA§*/ {
-	virtual ~A() = default;/*§dtorA§*/ 
-	virtual void f() = 0;/*§fA§*/
+struct A {
+	virtual ~A() = default; 
+	virtual void f() = 0;
 };
 
-struct B : A {/*§intB§*/
-	virtual void g() = 0;/*§gB§*/
+struct B : A {
+	virtual void g() = 0;
 };
 
-struct C : A {/*§intC§*/
-	virtual void h() = 0;/*§hC§*/
+struct C : A {
+	virtual void h() = 0;
 };
 
-struct D : B, C {/*§classD§*/
-	void f() override { cout << "D::f()\n"; }/*§fD§*/
-	void g() override { cout << "D::g()\n"; }/*§gD§*/
-	void h() override { cout << "D::h()\n"; }/*§hD§*/
+struct D : B, C {
+	void f() override { cout << "D::f()\n"; }
+	void g() override { cout << "D::g()\n"; }
+	void h() override { cout << "D::h()\n"; }
 };
 
 int main() {
 	D d;
-	B* b = &d;/*§zeigerB§*/
-	C* c = &d;/*§zeigerC§*/
-	b->f();/*§aufrufBf§*/
-	b->g();/*§aufrufBg§*/
-	//b->h();/*§fehler1§*/
-	c->f();/*§aufrufCf§*/
-	c->h();/*§aufrufCh§*/
-	//c->g();/*§fehler2§*/
+	B* b = &d;
+	C* c = &d;
+	b->f();
+	b->g();
+	//b->h();
+	c->f();
+	c->h();
+	//c->g();
 }
 

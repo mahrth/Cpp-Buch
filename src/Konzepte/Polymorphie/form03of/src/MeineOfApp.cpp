@@ -2,27 +2,27 @@
 #include "Vektor.h"
 #include "WeltImpl.h"
 
-void MeineOfApp::setup() {/*§setup§*/
-	ofBackground(255, 255, 255);/*§ofBackground§*/
-	ofSetWindowTitle("form03of");/*§ofSetWindowTitle§*/
-	ofSetFrameRate(60);/*§ofSetFrameRate§*/
+void MeineOfApp::setup() {
+	ofBackground(255, 255, 255);
+	ofSetWindowTitle("form03of");
+	ofSetFrameRate(60);
 	const int anzahlFormen = 100;
-	const double breite = ofGetViewportWidth();/*§ofGetViewportWidth§*/
-	const double hoehe = ofGetViewportHeight();/*§ofGetViewportHeight§*/
-	const Vektor abmessung{breite, hoehe};/*§abmessung§*/
-	welt = new WeltImpl{abmessung, anzahlFormen};/*§welt§*/
+	const double breite = ofGetViewportWidth();
+	const double hoehe = ofGetViewportHeight();
+	const Vektor abmessung{breite, hoehe};
+	welt = new WeltImpl{abmessung, anzahlFormen};
 }
 
-void MeineOfApp::update() {/*§update§*/
+void MeineOfApp::update() {
 	welt->naechsterSchritt(dt);
 }
 
-void MeineOfApp::draw() {/*§draw§*/
+void MeineOfApp::draw() {
 	welt->anzeigen();
 }
 
-void MeineOfApp::exit() {/*§exit§*/
+void MeineOfApp::exit() {
 	if(welt!=nullptr) {
-		delete welt;/*§delete§*/
+		delete welt;
 	}
 }
