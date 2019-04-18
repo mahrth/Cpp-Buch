@@ -2,26 +2,26 @@
 #include <string>
 using namespace std;
 
-struct Singvogel {	
-	virtual string singen() const = 0;
-	virtual ~Singvogel() {}	
+struct Singvogel {/*§Singvogel§*/	
+	virtual string singen() const /*§abstract*/= 0/*§*/;
+	virtual ~Singvogel() = default;/*§dtorSingvogel§*/	
 };
 
-struct Nachtigall : Singvogel {
-	string singen() const override {	
+struct Nachtigall : Singvogel {/*§Nachtigall§*/
+	string singen() const override {/*§singen2§*/	
 		return "Gesang der Nachtigall";
 	}	
 };
 
-struct Blaumeise : Singvogel {
-	string singen() const override {	
+struct Blaumeise : Singvogel {/*§Blaumeise§*/
+	string singen() const override {/*§singen3§*/	
 		return "Gesang der Blaumeise";
 	}	
 };
 
 int main() {
-	//Singvogel singvogel;
-	Singvogel* singvogel = new Nachtigall;
-	cout << singvogel->singen();
+	//Singvogel singvogel;/*§fehler§*/
+	Singvogel* singvogel = new Nachtigall;/*§singvogel2§*/
+	cout << singvogel->singen();/*§singvogel3§*/
 	delete singvogel;
 }
