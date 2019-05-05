@@ -8,7 +8,7 @@ private:
 	static int _nAktiv;
 public:
 	A() : _kennung(++_nErzeugt) { _nAktiv++; }
-	virtual ~A() { _nAktiv--; }
+	~A() { _nAktiv--; }
 	int kennung() const { return _kennung; }
 	static int nErzeugt() {	return _nErzeugt; } 
 	static int nAktiv() { return _nAktiv; } 
@@ -30,4 +30,5 @@ int main() {
 	}
 	cout << "\nKontext verlassen";
 	cout << "\nAktive Objekte: " << A::nAktiv();
+	cout << endl;
 }

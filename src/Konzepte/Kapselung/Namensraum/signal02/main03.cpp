@@ -9,5 +9,5 @@ int main() {
 	cout << "Eingang: " << ein.text();
 	Prozessor prozessor; 
 	Signal aus = prozessor.verarbeiten(ein); 
-	cout << "\nAusgang: " << aus.text();
+	cout << "\nAusgang: " << aus.text() << endl;
 }

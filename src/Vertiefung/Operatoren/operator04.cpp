@@ -32,5 +32,5 @@ int main() {
 	a3 = a1 + a2;
 	cout << "\n5: a3.n=" << a3.n;
 	a3 = a1 - a2;
-	cout << "\n6: a3.n=" << a3.n;
+	cout << "\n6: a3.n=" << a3.n << endl;
 }

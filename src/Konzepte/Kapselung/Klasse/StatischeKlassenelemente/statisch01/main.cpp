@@ -15,5 +15,6 @@ int main() {
 	cout << "\na1.n=" << a1.n << ", a2.n=" << a2.n;
 	A::n++;	
 	cout << "\na1.n=" << a1.n << ", a2.n=" << a2.n;
+	cout << endl;
 }
 

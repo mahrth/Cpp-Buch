@@ -16,5 +16,5 @@ int main() {
 	a.operator!();
 	cout << "\n3: a.b=" << a.b;
 	!a;
-	cout << "\n4: a.b=" << a.b;
+	cout << "\n4: a.b=" << a.b << endl;
 }

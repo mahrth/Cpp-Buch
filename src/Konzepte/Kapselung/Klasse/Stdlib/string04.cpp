@@ -8,5 +8,5 @@ int main() {
 	string s = to_string(i);
 	cout << s << endl;
 	s = "i=" + to_string(i) + ", f=" + to_string(f);
-	cout << s;
+	cout << s << endl;
 }

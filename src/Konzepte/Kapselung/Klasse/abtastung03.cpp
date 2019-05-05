@@ -76,6 +76,7 @@ int main() {
 	signalSpeichern(signal, dateinameWerte);
 	schreibeGnuplotParameter(dateinameGnuplot, dateinameWerte, dateinamePdf);
 	starteGnuplot(dateinameGnuplot);
+	cout << endl;
 }
 
 string Komplex::text() const {

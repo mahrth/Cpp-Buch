@@ -10,5 +10,5 @@ int main() {
 	Stapel<double,3> stapel2{stapel1};
 	cout << "\nstapel2 = " << stapel2;
 	Stapel<int,2> stapel3{stapel1};
-	cout << "\nstapel3 = " << stapel3;	
+	cout << "\nstapel3 = " << stapel3 << endl;	
 }

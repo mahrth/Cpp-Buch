@@ -2,17 +2,17 @@
 using namespace std;
 
 void f1(int i) {  
-	cout << "f(int)";
+	cout << "f1(int)";
 	i++;  
 }
 
 void f2(int* z) { 
-	cout << "f(int*)";
+	cout << "f2(int*)";
 	(*z)++; 
 }
 
 void f3(int& r) { 
-	cout << "f(int&)";
+	cout << "f3(int&)";
 	r++;
 }
 

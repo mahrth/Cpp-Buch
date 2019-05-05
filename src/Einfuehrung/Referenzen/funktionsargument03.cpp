@@ -2,12 +2,12 @@
 using namespace std;
 
 void f2(const int* z) { 
-	cout << "f(const int*): Lesende Übergabe per Zeiger\n";
+	cout << "f2(const int*): Lesende Übergabe per Zeiger\n";
 	//(*z)++;
 }
 
 void f3(const int& r) { 
-	cout << "f(const int&): Lesende Übergabe per Referenz\n";
+	cout << "f3(const int&): Lesende Übergabe per Referenz\n";
 	//r++;
 }
 

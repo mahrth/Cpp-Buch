@@ -13,6 +13,6 @@ struct B : A {
 int main() {
 	A a;
 	B b;
-	cout << "a.f(): " << a.f()	<< "\nb.f(): " << b.f();
+	cout << "a.f(): " << a.f()	<< "\nb.f(): " << b.f() << endl;
 }
 

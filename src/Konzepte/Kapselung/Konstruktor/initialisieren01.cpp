@@ -8,7 +8,7 @@ struct B {
 	const bool b = false;
 	B()	{
 		cout << "B:B()" 
-		<< "\ni=" << i << " d=" << d << " b=" << b;
+		<< "\ni=" << i << " d=" << d << " b=" << b << endl;
 	}
 };
 

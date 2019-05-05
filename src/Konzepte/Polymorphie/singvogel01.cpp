@@ -3,18 +3,18 @@
 using namespace std;
 
 struct Singvogel {	
-	string singen() const {	return "?"; }		
+	string singen() const {	return "?\n"; }		
 };
 
 struct Nachtigall : Singvogel {
 	string singen() const {	
-		return "Gesang der Nachtigall";
+		return "Gesang der Nachtigall\n";
 	}	
 };
 
 struct Blaumeise : Singvogel {
 	string singen() const {	
-		return "Gesang der Blaumeise";
+		return "Gesang der Blaumeise\n";
 	}	
 };
 

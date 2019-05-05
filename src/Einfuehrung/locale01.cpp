@@ -6,5 +6,5 @@ int main() {
     double d = 123.456;
     cout << "Punkt: " << d << '\n';
     cout.imbue(locale(""));
-    cout << "Komma: " << d << '\n';
+    cout << "Komma: " << d << endl;
 }

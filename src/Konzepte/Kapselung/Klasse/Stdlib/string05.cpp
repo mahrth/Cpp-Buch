@@ -11,5 +11,5 @@ int main() {
 	stringstream ss;
 	ss << endl << "i=" << i << ", f=" << f;
 	s = ss.str();
-	cout << s;
+	cout << s << endl;
 }

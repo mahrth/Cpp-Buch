@@ -11,9 +11,10 @@ inline string quadrat(const string& x) {
 }
 
 int main() {
-	cout << "quadrat(3): " << quadrat(3);
-	cout << "\nquadrat(1.5): " << quadrat(1.5);
-	cout << "\nquadrat(\"2.5\"): " << quadrat("2.5");
+	cout << "quadrat(3): " << quadrat(3)
+		<< "\nquadrat(1.5): " << quadrat(1.5)
+		<< "\nquadrat(\"2.5\"): " << quadrat("2.5")
+		<< endl;
 }
 
 template <typename T> T quadrat(const T& x) {

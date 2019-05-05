@@ -9,13 +9,13 @@ struct Singvogel {
 
 struct Nachtigall : Singvogel {
 	string singen() const override {	
-		return "Gesang der Nachtigall";
+		return "Gesang der Nachtigall\n";
 	}	
 };
 
 struct Blaumeise : Singvogel {
 	string singen() const override {	
-		return "Gesang der Blaumeise";
+		return "Gesang der Blaumeise\n";
 	}	
 };
 

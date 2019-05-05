@@ -16,6 +16,6 @@ int main() {
 	A a;
 	B b;
 	cout << "a.f(): " << a.f()	
-		<< "\nb.f(): " << b.f();
+		<< "\nb.f(): " << b.f() << endl;
 }
 

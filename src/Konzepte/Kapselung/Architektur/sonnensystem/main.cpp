@@ -1,6 +1,7 @@
 #include "Sonnensystem.h"
 #include <iostream>
 using namespace Astro;
+using namespace std;
 
 int main () {
 	Stern sonne("Sonne");
@@ -21,5 +22,5 @@ int main () {
 	sonnensystem.fuegeHinzu(saturn);
 	sonnensystem.fuegeHinzu(uranus);
 	sonnensystem.fuegeHinzu(neptun);
-	std::cout << sonnensystem.text();
+	cout << sonnensystem.text() << endl;
 }

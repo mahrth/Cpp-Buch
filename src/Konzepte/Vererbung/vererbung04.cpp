@@ -20,6 +20,7 @@ int main() {
 		<< "\nsizeof(b): " << sizeof(b)
 		<< "\n&b: " << &b
 		<< "\n&b.k: " << &b.k
-		<< "\n&b.l: " << &b.l;
+		<< "\n&b.l: " << &b.l
+		<< endl;
 }
 

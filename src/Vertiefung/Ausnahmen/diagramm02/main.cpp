@@ -12,12 +12,12 @@ int main() {
 		diagramm.erstellen(signal, "signal");
 	}
 	catch(const GnuplotNichtGefunden& e) {
-		cout << "Gnuplot kann nicht gefunden werden. Bitte Gnuplot in den Suchpfad aufnehmen.";
+		cout << "Gnuplot kann nicht gefunden werden. Bitte Gnuplot in den Suchpfad aufnehmen.\n";
 	}
 	catch(const runtime_error& e) {
-		cout << "runtime_error in main() gefangen: " << e.what();
+		cout << "runtime_error in main() gefangen: " << e.what() << endl;
 	}
 	catch(const logic_error& e) {
-		cout << "logic_error in main() gefangen: " << e.what();
+		cout << "logic_error in main() gefangen: " << e.what() << endl;
 	}
 }

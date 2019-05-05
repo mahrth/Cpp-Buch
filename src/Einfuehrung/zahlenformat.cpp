@@ -9,5 +9,5 @@ int main () {
 		<< "\nscientific: " << scientific << d1 << " " << d2
 		<< "\nfixed: " << fixed << d1 << " " << d2
 		<< "\nsetprecision(1): " << setprecision(1) << d1 << " " << d2
-		<< "\nscientific: " << scientific << d1 << " " << d2;
+		<< "\nscientific: " << scientific << d1 << " " << d2 << endl;
 }

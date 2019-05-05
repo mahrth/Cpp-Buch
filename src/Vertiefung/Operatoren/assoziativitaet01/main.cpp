@@ -24,4 +24,5 @@ int main() {
 	a1 -= a2 -= a3;
 	cout << "\noperator-=(a1,operator-=(a2,a3)): ";
 	operator-=(a1,operator-=(a2,a3));
+	cout << endl;
 }

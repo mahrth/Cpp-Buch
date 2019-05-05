@@ -17,10 +17,11 @@ const char* f(int arg1, int arg2) {
 int main() {
 	int i=0, j=0;
 	double d=0.0;
-	cout << "f()    -> " << f();
-	cout << "\nf(i)   -> " << f(i);
-	cout << "\nf(d)   -> " << f(d);
-	cout << "\nf(i,j) -> " << f(i,j);
+	cout << "f()    -> " << f()
+		<< "\nf(i)   -> " << f(i)
+		<< "\nf(d)   -> " << f(d)
+		<< "\nf(i,j) -> " << f(i,j)
+		<< endl;
 }
 
 

@@ -16,4 +16,5 @@ int main() {
 	z->e1 = 3;
 	(*z).e2 = 4;
 	f(s);
+	cout << endl;
 }

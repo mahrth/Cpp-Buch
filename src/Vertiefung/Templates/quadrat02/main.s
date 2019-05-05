@@ -139,6 +139,9 @@ main:
 	movl	%ebx, %esi
 	movq	%rax, %rdi
 	call	_ZNSolsEi
+	movl	$_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, %esi
+	movl	$_ZSt4cout, %edi
+	call	_ZNSolsEPFRSoS_E
 .LEHE1:
 	leaq	-64(%rbp), %rax
 	movq	%rax, %rdi
@@ -288,7 +291,7 @@ _Z7quadratI7KomplexET_RKS1_:
 	.text
 	.type	_Z41__static_initialization_and_destruction_0ii, @function
 _Z41__static_initialization_and_destruction_0ii:
-.LFB1586:
+.LFB1591:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -314,11 +317,11 @@ _Z41__static_initialization_and_destruction_0ii:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE1586:
+.LFE1591:
 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
 	.type	_GLOBAL__sub_I_main, @function
 _GLOBAL__sub_I_main:
-.LFB1587:
+.LFB1592:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -332,7 +335,7 @@ _GLOBAL__sub_I_main:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE1587:
+.LFE1592:
 	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
 	.section	.init_array,"aw"
 	.align 8

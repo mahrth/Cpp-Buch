@@ -17,6 +17,7 @@ int main() {
 	B b(1,2);
 	cout << "b.i=" << b.i 
 		<< "\nb.j=" << b.j
-		<< "\nb.A::j=" << b.A::j;
+		<< "\nb.A::j=" << b.A::j
+		<< endl;
 }
 

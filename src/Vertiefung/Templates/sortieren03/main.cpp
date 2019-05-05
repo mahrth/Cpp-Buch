@@ -16,5 +16,5 @@ int main() {
 	cout << "v0 = " << v0;
 	vector<Komplex> v1 = v0;
 	sort(v1.begin(), v1.end());
-	cout << "\nv1 = " << v1;
+	cout << "\nv1 = " << v1 << endl;
 }

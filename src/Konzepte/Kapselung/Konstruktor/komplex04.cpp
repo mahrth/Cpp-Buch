@@ -24,6 +24,7 @@ int main() {
 	Komplex b{-3.0,-4.0};
 	Komplex c;
 	c = a.mul(b);
+	cout << endl;
 }
 
 string Komplex::text() const {

@@ -12,5 +12,5 @@ int main() {
 	Komplex k{4.0,5.0};	
 	cout << "quadrat(i): " << quadrat(i);
 	cout << "\nquadrat(d): " << quadrat(d);
-	cout << "\nquadrat(k): " << quadrat(k);
+	cout << "\nquadrat(k): " << quadrat(k) << endl;
 }

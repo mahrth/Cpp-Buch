@@ -49,4 +49,5 @@ int main() {
 	cout << "a.real(): " << a.real() << "  a.imag(): " << a.imag() << endl;
 	cout << "\n|a| = " << a.betrag();
 	cout << "\n|a| = " << a.betrag();	
+	cout << endl;
 }

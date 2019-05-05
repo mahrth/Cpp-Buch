@@ -27,5 +27,6 @@ int main() {
 	Komplex c = a.mul(b);
 	cout << "\nc = ";
 	c.ausgeben();
+	cout << endl;
 }
 

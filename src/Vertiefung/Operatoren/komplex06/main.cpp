@@ -16,7 +16,7 @@ int main() {
 			cin.ignore(numeric_limits<int>::max(), '\n');
 		}
 		else {
-			cout << "k[" << i << "] = " << k[i] << endl; 
+			cout << "k[" << i << "] = " << k[i] << endl;
 			i++;
 		}
 	}

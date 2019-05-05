@@ -14,6 +14,7 @@ struct B : A {
 int main() {
 	B b(2,3);
 	cout << "b.k: " << b.k
-		<< "\nb.l: " << b.l;
+		<< "\nb.l: " << b.l 
+		<< endl;
 }
 

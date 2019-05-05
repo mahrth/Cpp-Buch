@@ -14,4 +14,5 @@ int main() {
 	S* z = &s;
 	z->f();
 	(*z).f();
+	cout << endl;
 }

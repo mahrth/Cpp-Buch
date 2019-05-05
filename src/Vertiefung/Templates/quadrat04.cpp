@@ -6,9 +6,10 @@ template <typename T> T quadrat(const T&);
 string quadrat(string&);
 
 int main() {
-	cout << quadrat(3);
-	cout << quadrat(1.5);
-	//cout << quadrat("2.5");
+	cout << quadrat(3) << " "
+		<< quadrat(1.5) << " "
+		//<< quadrat("2.5") << " "
+		<< endl;
 }
 
 template <typename T> T quadrat(const T& x) {

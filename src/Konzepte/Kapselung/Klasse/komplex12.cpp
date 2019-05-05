@@ -57,5 +57,5 @@ int main() {
 	b.wert(3.0, 4.0);	
 	cout << "|a| + |b| = " << addiereBetraege(a,b) << endl;
 	cout << "|a| = " << a.betrag() << endl;
-	cout << "|b| = " << b.betrag();
+	cout << "|b| = " << b.betrag() << endl;
 }

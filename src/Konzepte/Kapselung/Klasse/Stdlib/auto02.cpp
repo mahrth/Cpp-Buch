@@ -18,4 +18,5 @@ int main() {
 	for(auto e : v) {
 		cout << e << " ";
 	}
+	cout << endl;
 }

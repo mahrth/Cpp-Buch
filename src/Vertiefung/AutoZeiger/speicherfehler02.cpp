@@ -17,6 +17,6 @@ int main() {
 		f();  
 	}
 	catch(const exception& e) { 
-		cout << "Ausnahme in main() gefangen";
+		cout << "Ausnahme in main() gefangen\n";
 	}
 }

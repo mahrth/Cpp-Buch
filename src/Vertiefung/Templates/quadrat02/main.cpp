@@ -15,4 +15,5 @@ int main() {
 	cout << "\nquadrat(k): " << quadrat(k);
 	cout << "\nquadrat<int>(d): " << quadrat<int>(d);
 	//cout << "\nquadrat(s): " << quadrat(s);
+	cout << endl;
 }

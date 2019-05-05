@@ -12,5 +12,5 @@ int main() {
 	const A a2{false};
 	cout << "1: a1.b=" << a1.b << ", a2.b=" << a2.b;
 	a1 = !a2;
-	cout << "\n2: a1.b=" << a1.b << ", a2.b=" << a2.b;
+	cout << "\n2: a1.b=" << a1.b << ", a2.b=" << a2.b << endl;
 }

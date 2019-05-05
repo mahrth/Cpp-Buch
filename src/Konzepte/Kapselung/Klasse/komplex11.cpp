@@ -47,4 +47,5 @@ int main() {
 	a.wert(1.0, 2.0);
 	cout << "a = ";
 	a.ausgeben();
+	cout << endl;
 }

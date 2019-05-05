@@ -30,7 +30,7 @@ int main() {
 	cout << "a = " << a.text();
 	cout << "\nb = " << b.text();
 	c = a.mul(b);
-	cout << "\nc = " << c.text();	
+	cout << "\nc = " << c.text() << endl;	
 }
 
 string Komplex::text() const {

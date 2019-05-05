@@ -4,19 +4,19 @@ using namespace std;
 
 struct Singvogel {	
 	virtual string singen() const {	
-		return "?";
+		return "?\n";
 	}	
 };
 
 struct Nachtigall : Singvogel {
 	string singen() const {	
-		return "Gesang der Nachtigall";
+		return "Gesang der Nachtigall\n";
 	}	
 };
 
 struct Blaumeise : Singvogel {
 	string singen() const {	
-		return "Gesang der Blaumeise";
+		return "Gesang der Blaumeise\n";
 	}	
 };
 

@@ -7,8 +7,9 @@ const char* f(int& i) { return "f(int&)"; }
 int main() {
 	int i=0;
 	int const c=0;
-	cout << "int       -> " << f(i);
-	//cout << "\nint const -> " << f(c);
+	cout << "int       -> " << f(i)
+		//<< "\nint const -> " << f(c)
+		<< endl;
 }
 
 

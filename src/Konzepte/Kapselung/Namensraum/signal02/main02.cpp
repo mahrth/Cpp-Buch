@@ -8,5 +8,5 @@ int main() {
 	cout << "Eingang: " << ein.text();
 	Signalverarbeitung::Prozessor prozessor;
 	Signalverarbeitung::Signal aus = prozessor.verarbeiten(ein);
-	cout << "\nAusgang: " << aus.text();
+	cout << "\nAusgang: " << aus.text() << endl;
 }

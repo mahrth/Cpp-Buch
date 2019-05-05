@@ -27,5 +27,5 @@ int main() {
 	Vergleicher vergleicher;
 	vector<int> v2 = v0;
 	sort(v2.begin(), v2.end(), vergleicher);
-	cout << "\nv2 = " << v2;
+	cout << "\nv2 = " << v2 << endl;
 }

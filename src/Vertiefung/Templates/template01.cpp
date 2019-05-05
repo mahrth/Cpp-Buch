@@ -16,8 +16,8 @@ ostream& operator<<(ostream& s, const A<T>& a) {
 
 int main() {
 	A<double> a1{1.1};
-	cout << "a1 = " << a1;
+	cout << "a1 = " << a1 << endl;
 	A<double> a2{a1};
-	cout << "\na2 = " << a2;
+	cout << "a2 = " << a2 << endl;
 	//A<int> a3{a1};
 }

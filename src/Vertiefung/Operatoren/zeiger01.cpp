@@ -12,5 +12,5 @@ int main() {
 	cout << "a.n: " << a.n;
 	cout << "\na.*zn: " << a.*zn;
 	A* za = &a;
-	cout << "\nza->*zn: " << za->*zn;
+	cout << "\nza->*zn: " << za->*zn << endl;
 }

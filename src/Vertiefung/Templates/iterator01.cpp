@@ -12,4 +12,5 @@ int main() {
 		int e = *it;
 		cout << e << " ";
 	}
+	cout << endl;
 }

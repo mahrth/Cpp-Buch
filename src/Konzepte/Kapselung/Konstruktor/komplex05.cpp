@@ -17,7 +17,7 @@ struct Komplex {
 
 int main() {
 	Komplex k{1.0};
-	cout << "k = " << k.text();
+	cout << "k = " << k.text() << endl;
 }
 
 string Komplex::text() const {

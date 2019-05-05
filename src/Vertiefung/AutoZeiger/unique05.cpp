@@ -3,8 +3,12 @@
 using namespace std;
 
 ostream& operator<<(ostream& os, const unique_ptr<int>& z) {
-	if(z==nullptr) { os << " == nullptr"; }	
-	else { os << " zeigt auf " << *z;	}
+	if(z==nullptr) {
+		os << " == nullptr"; 
+	}
+	else { 
+		os << " zeigt auf " << *z;	
+	}
 	return os;
 }
 
@@ -19,5 +23,5 @@ int main() {
 	//z4 = z3;
 	z4 = move(z3);
 	cout << "\n4: z3" << z3;
-	cout << "\n5: z4" << z4;
+	cout << "\n5: z4" << z4 << endl;
 }

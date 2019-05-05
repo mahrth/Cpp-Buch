@@ -13,5 +13,5 @@ int main() {
 	cout << "\ns1=" << s1 << ", s2=" << s2;
 	cout << "\nInhalt verschieben:";
 	s2 = move(s1); 
-	cout << "\ns1=" << s1 << ", s2=" << s2;
+	cout << "\ns1=" << s1 << ", s2=" << s2 << endl;
 }

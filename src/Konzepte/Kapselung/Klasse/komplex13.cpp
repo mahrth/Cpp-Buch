@@ -51,5 +51,5 @@ int main() {
 	Komplex a, b;
 	a.wert(1.0, 2.0);
 	b.wert(3.0, 4.0);	
-	cout << "a = " << a.text()	<< "\nb = " << b.text();
+	cout << "a = " << a.text()	<< "\nb = " << b.text() << endl;
 }

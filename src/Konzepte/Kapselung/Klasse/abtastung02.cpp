@@ -57,7 +57,7 @@ public:
 int main() {
 	Signal signal;
 	signal.generieren(3,2.0);
-	cout << signal.text();
+	cout << signal.text() << endl;
 }
 
 string Komplex::text() {

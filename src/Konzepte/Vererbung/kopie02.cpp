@@ -27,6 +27,7 @@ int main() {
 		<< "\nsizeof(a): " << sizeof(a) 
 		<< "\nsizeof(b): " << sizeof(b)
 		<< "\nsizeof(r): " << sizeof(r)
-		<< "\nsizeof(a2): " << sizeof(a2);
+		<< "\nsizeof(a2): " << sizeof(a2)
+		<< endl;
 }
 

@@ -27,5 +27,6 @@ int main() {
 	Komplex c = mulKomplex(a,b);
 	cout << "\nc = ";
 	ausgebenKomplex(c);
+	cout << endl;
 }
 

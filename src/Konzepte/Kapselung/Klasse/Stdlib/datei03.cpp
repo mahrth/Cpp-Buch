@@ -18,6 +18,6 @@ int main() {
 	ifstream ifs;
 	ifs.open(dateiname);
 	ifs >> i3 >> i4 >> f3 >> f4;
-	cout << i3 << " - " << i4 << " - " << f3 << " - " << f4;
+	cout << i3 << " - " << i4 << " - " << f3 << " - " << f4 << endl;
 	ifs.close();
 }

@@ -14,7 +14,7 @@ public:
 };
 
 int main() {
-	Vektor a{10,20,30}; 
+	Vektor a{10,20,30};
 	cout << "a = " << a.text() << endl;
 }
 

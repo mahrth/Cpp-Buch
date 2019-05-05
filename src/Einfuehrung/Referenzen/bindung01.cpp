@@ -10,10 +10,10 @@ int main() {
 	int const* zc = &i;
 	int* const cz = &i;
 	int const* const czc = &i;
-	cout << "int*             -> " << f(z);
-	cout << "\nint const*       -> " << f(zc);
-	cout << "\nint* const       -> " << f(cz);
-	cout << "\nint const* const -> " << f(czc);
+	cout << "int*             -> " << f(z)
+		<< "\nint const*       -> " << f(zc)
+		<< "\nint* const       -> " << f(cz)
+		<< "\nint const* const -> " << f(czc) << endl;
 }
 
 
