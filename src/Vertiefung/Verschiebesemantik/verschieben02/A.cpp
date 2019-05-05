@@ -1,23 +1,23 @@
 #include "A.h"
 using namespace std;
 
-A::A(const A& a) : v(a.v) { 
-	cout << "A(const A&)\n"; 
+A::A(const A& r) : v(r.v) { 
+	cout << "A(const A& r): r=" << r << "\n"; 
 }
 
-A::A(A&& a) : v(a.v) {
-	cout << "A(A&&)\n";	
+A::A(A&& r) : v(move(r.v)) {
+	cout << "A(A&& r): r=" << r << "\n";	
 }
 
-A& A::operator=(const A& a) {
-	cout << "operator=(const A&)\n";
-	v = a.v;
+A& A::operator=(const A& r) {
+	v = r.v;
+	cout << "operator=(const A& r): r=" << r << "\n";
 	return *this;
 }
 
-A& A::operator=(A&& a) {
-	cout << "operator=(A&&)\n";
-	v = a.v;
+A& A::operator=(A&& r) {
+	v = move(r.v);
+	cout << "operator=(A&& r): r=" << r << "\n";
 	return *this;
 }
 

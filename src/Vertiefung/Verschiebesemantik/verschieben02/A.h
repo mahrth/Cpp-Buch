@@ -5,12 +5,12 @@
 struct A {
 	std::vector<int> v;
 	A(std::initializer_list<int> l) : v(l) {}
-	A(const A& a);
-	A(A&& a);
-	A& operator=(const A& a);
-	A& operator=(A&& a);
+	A(const A&);
+	A(A&&);
+	A& operator=(const A&);
+	A& operator=(A&&);
 	static void tauschePerKopie(A&, A&); 
 	static void tauschePerVerschiebung(A&, A&); 
 };
 
-std::ostream& operator<<(std::ostream& os, const A& a);
+std::ostream& operator<<(std::ostream&, const A&);
