@@ -3,10 +3,10 @@ import qbs.Process
 import qbs.File
 import qbs.FileInfo
 import qbs.TextFile
-import "/home/tmahr/Programme/of_v0.10.1_linux64gcc6_release/libs/openFrameworksCompiled/project/qtcreator/ofApp.qbs" as ofApp
+import "../../../libs/openFrameworksCompiled/project/qtcreator/ofApp.qbs" as ofApp
 
 Project{
-    property string of_root: '/home/tmahr/Programme/of_v0.10.1_linux64gcc6_release'
+    property string of_root: '../../..'
 
     ofApp {
         name: { return FileInfo.baseName(sourceDirectory) }
@@ -30,13 +30,13 @@ Project{
             "src/Welt.h",
             "src/WeltImpl.cpp",
             "src/WeltImpl.h",
-            "src/main.cpp",
-            "src/ofApp.cpp",
-            "src/ofApp.h",
+            'src/main.cpp',
+            'src/ofApp.cpp',
+            'src/ofApp.h',
         ]
 
         of.addons: [
-
+            'ofxAssimpModelLoader'
         ]
 
         // additional flags for the project. the of module sets some
@@ -54,7 +54,7 @@ Project{
         of.dynamicLibraries: [] // dynamic libraries
 
         // create a console window when the application start
-        consoleApplication: true
+        consoleApplication: false
 
         // other flags can be set through the cpp module: http://doc.qt.io/qbs/cpp-module.html
         // eg: this will enable ccache when compiling
